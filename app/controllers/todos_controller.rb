@@ -1,5 +1,4 @@
 class TodosController < ApplicationController
-  before_action :allow_cros_origin
 
   def get_all
     render json: { data: Todo.all }, status: :ok
@@ -20,11 +19,5 @@ class TodosController < ApplicationController
 
   def mark_complete
     Todo.find(params[:id]).update(completed: params[:completed])
-  end
-
-  private
-
-  def allow_cros_origin
-    response.set_header('Access-Control-Allow-Origin', '*')
   end
 end
