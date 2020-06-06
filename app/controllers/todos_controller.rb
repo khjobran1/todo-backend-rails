@@ -1,5 +1,4 @@
 class TodosController < ApplicationController
-  skip_before_action :verify_authenticity_token
   before_action :allow_cros_origin
 
   def get_all
