@@ -1,24 +1,5 @@
-# README
+This is a backend API for: https://github.com/khjobran1/todo-frontend-react
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+And should run on port 3005:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`rails s -p 3005`
